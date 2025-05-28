@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
@@ -34,3 +35,36 @@ Global
 		SolutionGuid = {85CB4C56-D91D-4129-9617-3B0B20456A47}
 	EndGlobalSection
 EndGlobal
+=======
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employee1.api", "Employee1.api\Employee1.api.csproj", "{0DF5DC0E-0623-43F1-9C58-EAE5728DE4E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeModelViewUI", "EmployeeModelViewUI\EmployeeModelViewUI.csproj", "{37317483-0E3F-4043-A843-BD342DD9082A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DF5DC0E-0623-43F1-9C58-EAE5728DE4E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DF5DC0E-0623-43F1-9C58-EAE5728DE4E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DF5DC0E-0623-43F1-9C58-EAE5728DE4E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DF5DC0E-0623-43F1-9C58-EAE5728DE4E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37317483-0E3F-4043-A843-BD342DD9082A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37317483-0E3F-4043-A843-BD342DD9082A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37317483-0E3F-4043-A843-BD342DD9082A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37317483-0E3F-4043-A843-BD342DD9082A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85CB4C56-D91D-4129-9617-3B0B20456A47}
+	EndGlobalSection
+EndGlobal
+>>>>>>> d3394a0c2a787b5d3923d025cc562a8348038eef
