@@ -1,0 +1,66 @@
+﻿@model IEnumerable<EmployeeModelViewUI.Models.DepartmentViewModel>
+
+@{
+    ViewData["Title"] = "Department List";
+}
+
+<div class="container">
+    <h4>@ViewData["Title"]</h4>
+
+    <p>
+        <a asp-action="Create" class="btn btn-primary"><i class="fas fa-plus"></i> Create New</a>
+    </p>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.SlNo)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DepartmentName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Discrtipion)
+                    </th>
+                    <th class="text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SlNo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DepartmentName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Discrtipion)
+                        </td>
+                        <td class="text-center">
+                            @* <a asp-action="Edit" asp-route-id="@item.DepartmentId" class="btn btn-sm btn-outline-primary" title="Edit"><i class="fas fa-edit"></i></a>*@  <!--Uncomment After the functionality implement -->
+                            <a asp-action="Details" asp-route-id="@item.SlNo" class="btn btn-sm btn-outline-info" title="Details"><i class="fas fa-info-circle"></i></a>
+                            <a asp-action="Delete" asp-route-id="@item.SlNo" class="btn btn-sm btn-outline-danger" title="Delete"><i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Styles {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .table-responsive {
+            overflow-x: auto; /* Ensures the table is scrollable on smaller screens */
+        }
+
+        .btn.btn-sm i {
+            margin: 0 2px; /* Optional: Add some spacing around the icons */
+        }
+    </style>
+}

@@ -1,0 +1,58 @@
+﻿@model EmployeeModelViewUI.Models.DepartmentViewModel
+
+@{
+    ViewData["Title"] = "Create Department";
+}
+
+<div class="container">
+    <h4>@ViewData["Title"]</h4>
+    <hr />
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <!-- DepartmentId (Hidden) -->
+                        <input type="hidden" asp-for="DepartmentId" />
+
+                        <!-- Department Name -->
+                        <div class="mb-3">
+                            <label asp-for="DepartmentName" class="form-label">Department Name</label>
+                            <input asp-for="DepartmentName" class="form-control" />
+                            <span asp-validation-for="DepartmentName" class="text-danger"></span>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="mb-3">
+                            <label asp-for="Discrtipion" class="form-label">Description</label>
+                            <textarea asp-for="Discrtipion" class="form-control" rows="3"></textarea>
+                            <span asp-validation-for="Discrtipion" class="text-danger"></span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Create</button>
+                            <a asp-action="Index" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to List</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        @* <div class="col-md-6">
+            </div> *@  <!--Remove Unnecessary div tag, -->
+    </div>
+
+
+</div>
+
+@section Styles {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+}
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

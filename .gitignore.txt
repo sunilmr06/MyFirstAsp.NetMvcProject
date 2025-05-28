@@ -1,0 +1,17 @@
+# Ignore Visual Studio temporary files, build results, etc.
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build Results
+[Bb]in/
+[Oo]bj/
+
+# VS files
+.vs/
+
+# Database files (optional)
+*.mdf
+*.ldf
+*.bak
