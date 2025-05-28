@@ -59,7 +59,7 @@ A full-stack **CRUD-based Employee Management System** built using **ASP.NET MVC
 
 ## 👨‍💻 Author
 
-- Built by [Your Name Here]
+- Built by Sunil Kumar M.R
 - [Optional: GitHub Profile](https://github.com/sunilmr06)
 
 ---
